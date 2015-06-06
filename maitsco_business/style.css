@@ -1,0 +1,427 @@
+body {
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+	font-size: 9pt;
+	background-color: #1d2122;
+	background-image:url(images/bg_bc.png); background-repeat:repeat-x;
+	color: #363636;
+
+
+}
+
+table {
+	width: 100%;
+}
+table td {
+	padding: 0;
+	border-width: 0;
+	vertical-align: top;
+}
+
+a {color: #1d2122; font-weight: normal; background-color: transparent;}
+a:hover {
+	color: #8d0007;
+	text-decoration: none;}
+	
+#wrapper { 
+ margin: 0 auto;
+ width: 1005px;
+}
+
+.MainWidth { }
+
+table {width: 100%;}
+table td {
+	padding: 0;
+	border-width: 2px;
+	vertical-align: top;}
+
+#logo {
+	background-image: url(images/bg_header.png);
+	height: 110px;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position: center top;
+}
+#main-logo {
+	position: absolute;
+	top: 33px;
+	left: 140px;
+
+}
+#h-menu {
+	position: absolute;
+	top: 33px;
+	right: 150px;
+	}
+#nav {
+	background-image: url(images/navi.png);
+	height: 35px;
+	background-repeat:repeat-x;
+	background-position: left top;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+    vertical-align:middle;
+}
+
+h1 {font-size: 130%;}
+h2 {font-size: 110%;}
+h3 {font-size: 105%;}
+h4 {font-size: 100%;}
+h5 {font-size: 95%;}
+h6 {font-size: 85%;}
+
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #000000}
+
+
+input[type=button], input[type=submit], input[type=reset] { 
+    PADDING-RIGHT: 0.5em;
+    PADDING-LEFT: 0.5em;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    BACKGROUND: url(images/hbar.png) repeat-x;
+    COLOR: #fff;
+    CURSOR: pointer;
+    BORDER-LEFT: 0px solid #ffffff;
+	BORDER-RIGHT: 0px solid #ffffff;
+	BORDER-BOTTOM: none;
+	BORDER-TOP: none;
+}
+input {
+	font-size: 100%;
+	color: #000000;
+	border: 1px solid #000000;
+	margin-bottom: 4px;
+	
+}
+
+.item {
+	margin-bottom: 25px;
+}
+.itemHead {
+	padding: 3px;
+	color: #000000;
+}
+
+.itemInfo {
+	text-align: right;
+	padding: 3px;
+	color: #000000;
+}
+.itemTitle a {
+	font-weight: normal;
+	color: #000000;
+}
+.itemPoster, .itemPostDate, .itemStats {font-size: 90%; color: #000000;}
+.itemBody {	padding: 5px;}
+.itemText {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	line-height: 1.5em;
+}
+.itemText a , .itemInfo a, .itemFoot a{
+	color: #1d2122;
+	font-weight: normal;
+}
+.itemText a:hover .itemInfo a:hover, .itemFoot a:hover {
+	color: #9b001d;
+	text-decoration: none;
+}
+
+.itemFoot {
+	text-align: right;
+	padding: 3px;
+	color: #000000;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {
+	color: #000000;
+	padding : 2px;
+	vertical-align : middle;
+	font-family: Tahoma;
+	
+}
+
+
+#leftcolumn {
+	width: 200px;
+	border-right: 0px dotted #000000;
+	background-color: #ffffff;
+	color: #000000;
+	padding-top: 2px;
+	padding-left:3px;
+	padding-right:3px;
+}
+#leftcolumn a {
+	color: #1d2122;
+}
+#leftcolumn a:hover{
+	text-decoration: none;
+	color: #9b001d;
+}
+
+#rightcolumn {
+	width: 200px;
+	border-left: 0px dotted #000000;
+	background-color: #ffffff;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+#leftcolumn th, #rightcolumn th {color: #ffffff; vertical-align: middle;}
+#leftcolumn .blockTitle {
+	padding: 6px 17px;
+	color: #ffffff;
+	font-weight: normal;
+	background-color: #ffffff;background-image: url(images/titles.png);
+}
+
+#leftcolumn .blockContent, #rightcolumn .blockContent {
+	padding: 4px 6px;
+	margin-bottom: 10px;
+}
+td#leftcolumn div.blockContent {
+	padding: 3px;
+	margin-bottom: 10px;
+	border: 1px solid #666666;
+}
+
+.centercol {
+	background-color: #FFFFFF;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: left;
+}
+.centercolb {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.centercol .blockContent a {
+}
+.centercol .blockContent a:hover {
+}
+.centercol .blockTitle h2, .centercolb .blockTitle h2 {
+
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+    background-color: #ffffff;background-image: url(images/navi.png);
+	font-family: "Tahoma", Arial, Tahoma;  
+    font-size: 15px; 
+	padding: 5px;
+
+}
+.centercol .blockContent, .centercolb .blockContent {
+	color: #333333;
+	padding-top: 7px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+	padding-right: 8px;
+	padding-left: 8px;
+	}
+.centercol li {
+}
+#centercolumn {padding: 0 5px 0 5px; background-color: transparent; text-align: left;}
+#centercolumn th {
+	color: #666666;
+	vertical-align: middle;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #1d2122;
+}
+#centerCcolumn, #bottomCcolumn { background-color: #fff; padding: 0px 3px 1px 3px;}
+#centerLcolumn, #bottomLcolumn {background-color: #fff; width: 50%; padding: 5px 8px 8px 0px;}
+#centerRcolumn,  #bottomRcolumn {background-color: #fff; width: 50%; padding: 5px 0px 8px 8px;}
+
+div#content { background-color: #fff; text-align: left; }
+
+
+
+td#rightcolumn {
+	width: 200px;
+	padding-top: 3px;
+}
+td#rightcolumn th {background-color: #ffffff; color: #FFFFFF; vertical-align: middle;}
+td#rightcolumn div.blockTitle {
+	padding: 6px 12px;
+	color: #ffffff;
+	font-weight: normal;
+	background-color: #ffffff;background-image: url(images/right_titles.png);
+}
+td#rightcolumn div.blockContent {
+	padding: 10px;
+	border: 1px solid #666666;
+	margin-bottom: 10px;
+	background-color: #F3F3F3;
+}
+
+#mainmenu a {
+	display: block;
+	margin: 0;
+	padding: 4px;
+	background: url(images/icon-red.png) no-repeat left center;
+	border-bottom: 1px solid #1d2122;
+	color: #1d2122;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+#mainmenu a:hover {
+	background: url(images/icon-dark-grey.png) no-repeat left center;
+	text-decoration: none;
+	color: #9b001d;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 11px; }
+#mainmenu a.menuSub {
+	padding-left: 11px;
+	background: url(none);
+	font-size: 80%;
+	color: #9b001d;
+	text-decoration: none;
+
+}
+
+#mainmenu a.menuSub:hover {
+	color: #747474;
+}
+#usermenu a {
+	display: block;
+	margin: 0;
+	padding: 4px 11px;
+	background: url(images/icon-red.png) no-repeat left center;
+	border-bottom: 1px solid #1d2122;
+	color: #1d2122;
+	font-weight: bold;
+	text-decoration:none;
+
+}
+#usermenu a:hover {
+	background: url(images/icon-dark-grey.png) no-repeat left center;
+	text-decoration: none;
+	color: #9b001d;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	background-color: #333333;
+	color: #CCCCCC;
+}
+
+
+.outer {}
+.head {
+	background-color: #ffffff;
+	padding: 2px;
+	font-weight: normal;
+    border: 1px solid #000000;
+}
+.even, tr.even td {background-color: #ffffff; padding: 1px;}
+.odd, tr.odd td {background-color: #dbdbdb; padding: 1px;}
+.foot {
+	padding: 1px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #ffffff; border-bottom: 1px solid #ffffff; padding: 10px;}
+
+div.xoopsCode{ background: #FFFFFF; border: 1px inset #000080; font-family: Tahoma; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: Tahoma; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: normal; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #ffffff; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #ffffff; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.footer {
+	padding: 10px 8px;
+	text-align: center;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	font-size: 100%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000000;
+	background-image: url(images/footer.png);
+	height: 95px;
+	width:1010px;
+	background-repeat:no-repeat;
+	
+}
+.footer a {
+	text-decoration: underline;
+	font-weight: normal;
+	color: #9b001d;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+
+select {
+	font-size: 90%;
+	margin-bottom: 4px;
+}
+
+textarea {
+}
+#slideshow {
+    position:relative;
+    height:200px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+/* ^^^^^^^^ BELOW IS THE CODE FOR THE MENU ^^^^^^^^^^ */
+ul#saturday{margin:0;padding:0;list-style-type:none;width:auto;position:relative;display:block;height:34px;font-size:12px;font-weight:bold;background:transparent url(images/bgOFF.gif) repeat-x top left;font-family:Helvetica,Arial,Verdana,sans-serif;}
+ul#saturday li{display:block;float:left;margin:0;padding:0;}
+ul#saturday li a{display:block;float:left;color:#ffffff;text-decoration:none;padding:12px 20px 0 20px;height:22px;background:transparent url(images/bg_bc.png) no-repeat top right;}
+ul#saturday li a:hover{background:transparent url(images/bgHOVER.gif) no-repeat top right;}
+ul#saturday li a.current,ul#saturday li a.current:hover{color:#fff;background:transparent url(images/bgON.gif) no-repeat top right;}
+/* ^^^^^^^^ ABOVE IS THE CODE FOR THE MENU ^^^^^^^^^^ */
+
+.style6 {color: #CCCCCC}
+.style9 {color: #333333}

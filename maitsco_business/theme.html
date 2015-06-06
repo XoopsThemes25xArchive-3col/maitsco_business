@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="Microsoft FrontPage 6.0" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+
+<!-- RMV: added module header -->
+    <{$xoops_module_header}>
+
+<{if $xoops_langcode == "ar"}>
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>rtl.css" />
+<{/if}>
+
+<{if $xoops_dirname != "publisher"}>
+<script type="text/javascript" src="<{$xoops_imageurl}>js/jquery-1.2.6.min.js"></script>
+<{/if}>
+
+<script type="text/javascript">
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+</head>
+
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+
+<!-- START HEADER-->
+<div align="center">
+  
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainWidth">
+<tr>
+      <td id="logo" width="1000" style="height: 108px">
+		<table border="0" width="100%">
+			<tr>
+				<td style="vertical-align: middle">		<div id="main-logo">
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/logo.png}>" alt="<{$xoops_sitename}>" /></a>
+		</div></td>
+				<td style="vertical-align: middle">
+				<div id="h-menu">
+					<table border="0" style="width: 320px; height: 75px">
+					<tr>
+						<td align="center">		
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/home.png}>" alt="<{$xoops_sitename}>" /></a></td>
+						<td align="center">		
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/forum.png}>" alt="Forum" /></a></td>
+						<td align="center">		
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/contact.png}>" alt="Contact Us" /></a></td>
+						<td align="center">		
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/map.png}>" alt="Sitemap" /></a></td>
+						<td align="center">		
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/rss.png}>" alt="RSS" /></a></td>
+					</tr>
+				</table>
+                </div>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+      <td id="header" width="1010" style="height: 200px">
+		<table border="0" width="100%" cellspacing="1">
+			<tr>
+				<td width="1000"><div id="slideshow">
+    <img src="<{xoImgUrl img/image1.jpg}>" alt="welcome to our website" />
+    <img src="<{xoImgUrl img/image2.jpg}>" alt="welcome to our website" />
+    <img src="<{xoImgUrl img/image3.jpg}>" alt="welcome to our website" />
+    <img src="<{xoImgUrl img/image4.jpg}>" alt="welcome to our website" />
+    <img src="<{xoImgUrl img/image5.jpg}>" alt="welcome to our website" />
+</div></td>
+			</tr>
+		</table>
+		</td></tr>
+<tr>
+      <td id="nav" width="1000">
+      <table border="0" width="100%" cellspacing="1">
+		<tr>
+			<td><ul id="saturday">
+	<li><a href="#" title="">Home</a></li>
+	<li><a href="#" title="">About Us</a></li>
+	<li><a href="#" title="">Services</a></li>
+	<li><a href="#" title="">Our Work</a></li>
+	<li><a href="#" title="">Contact Us</a></li>
+	</ul></td>
+	<td style="vertical-align: middle" align="right">
+  <form style="margin: 0px;" action="<{$xoops_url}>/search.php" method="get">
+  <input type="text" name="query" size="14" />
+  <input type="hidden" name="action" value="results" />
+  <input type="submit" value="Search" />
+  </form>
+    </td>
+		</tr>
+		</table>
+		</td>
+</tr>
+</table>
+
+
+</div>
+
+<table cellspacing="0" id="Main" align="center">
+    <tr>
+	  <{if $xoops_showlblock == 1}>
+      <td id="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="$xoops_theme/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->      
+      </td>
+      <{/if}>
+      <td id="centercolumn">
+        <!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+  <table cellspacing="0" class="centercol">
+    <tr>
+      <td id="centerCcolumn" colspan="2">
+        <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="$xoops_theme/theme_blockcenter_c.html"}> <{/foreach}>
+        <!-- End center-center blocks loop -->      </td>
+    </tr>
+    <tr>
+      <td id="centerLcolumn">
+        <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="$xoops_theme/theme_blockcenter_l.html"}> <{/foreach}>
+        <!-- End center-left blocks loop -->      </td>
+      <td id="centerRcolumn">
+        <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="$xoops_theme/theme_blockcenter_r.html"}> <{/foreach}>
+        <!-- End center-right blocks loop -->      </td>
+    </tr>
+  </table>
+<{/if}>
+  <!-- End display center blocks -->
+  <div id="content"> <{$xoops_contents}> </div>
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+  <table cellspacing="0" class="centercol">
+<{if $xoBlocks.page_bottomcenter}>
+    <tr>
+      <td id="bottomCcolumn" colspan="2"> <{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/theme_blockcenter_c.html"}><{/foreach}> </td>
+    </tr>
+<{/if}> <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+    <tr>
+      <td id="bottomLcolumn"> <{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/theme_blockcenter_l.html"}><{/foreach}> </td>
+      <td id="bottomRcolumn"> <{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/theme_blockcenter_r.html"}><{/foreach}> </td>
+    </tr>
+<{/if}>
+  </table>
+<{/if}> </td>
+      <{if $xoops_showrblock == 1}>
+
+      <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="$xoops_theme/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->      </td>
+
+      <{/if}>    </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainWidth" align="center">
+  <tr>
+    <td class="footer"><span><{$xoops_footer}>&nbsp; 
+    Designed by <a target="_blank" href="http://www.maitsco.com/">MAITSCO</a></span></td>
+  </tr>
+</div>
+<!-- End Wrapper -->
+
+</body>
+</html>
